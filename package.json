@@ -1,0 +1,44 @@
+{
+  "name": "city-million-robots",
+  "private": true,
+  "type": "module",
+  "packageManager": "yarn@4.18.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "tools/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspace @city/city dev",
+    "build": "yarn workspace @city/city build",
+    "build:demo": "VITE_PUBLIC_DEMO=1 VITE_DEFAULT_REGION=central VITE_CESIUM_ION_TOKEN=$(sed -n 's/^VITE_CESIUM_ION_TOKEN=//p' apps/city/.env.production.local 2>/dev/null) yarn build && rm -rf apps/city/dist/regions/london apps/city/dist/regions/docklands apps/city/dist/regions/canary-wharf-128 apps/city/dist/regions/canary-wharf-512 apps/city/dist/regions/*/debug",
+    "typecheck": "tsc -b",
+    "lint": "eslint .",
+    "prettier-check": "prettier --check .",
+    "prettier-write": "prettier --write .",
+    "circular-dependencies": "madge --circular packages apps",
+    "test": "vitest run",
+    "check": "yarn typecheck && yarn lint && yarn prettier-check && yarn circular-dependencies && yarn test",
+    "dev:city": "yarn workspace @city/city dev",
+    "region": "yarn workspace @city/osm-pipeline build-region"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.0",
+    "@types/node": "^24",
+    "eslint": "^10.0.0",
+    "eslint-config-prettier": "^10.1.0",
+    "eslint-import-resolver-typescript": "^4.4.0",
+    "eslint-plugin-boundaries": "^7.0.0",
+    "eslint-plugin-react-hooks": "^7.1.0",
+    "globals": "^17.0.0",
+    "madge": "^8.0.0",
+    "prettier": "^3.9.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.70.0",
+    "vite": "^8.0.0",
+    "vitest": "^5.0.0"
+  }
+}

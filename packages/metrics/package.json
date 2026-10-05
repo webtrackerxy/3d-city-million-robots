@@ -1,0 +1,13 @@
+{
+  "name": "@city/metrics",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@webgpu/types": "^0.1.74"
+  }
+}

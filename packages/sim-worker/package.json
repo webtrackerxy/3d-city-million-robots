@@ -1,0 +1,17 @@
+{
+  "name": "@city/sim-worker",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@city/buildings": "workspace:*",
+    "@city/core-types": "workspace:*",
+    "@city/formats": "workspace:*",
+    "@city/nav": "workspace:*",
+    "@city/sim": "workspace:*"
+  }
+}

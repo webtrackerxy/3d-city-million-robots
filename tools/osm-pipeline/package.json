@@ -1,0 +1,20 @@
+{
+  "name": "@city/osm-pipeline",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build-region": "node src/main.ts",
+    "build-chunked": "node src/chunked.ts",
+    "labels": "node src/labels.ts"
+  },
+  "dependencies": {
+    "@city/core-types": "workspace:*",
+    "@city/formats": "workspace:*",
+    "@city/nav": "workspace:*",
+    "proj4": "^2.22.0"
+  },
+  "devDependencies": {
+    "@types/proj4": "^2.19.0"
+  }
+}

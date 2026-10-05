@@ -1,0 +1,20 @@
+{
+  "name": "@city/render",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@city/assets-runtime": "workspace:*",
+    "@city/core-types": "workspace:*",
+    "@city/metrics": "workspace:*",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.186.0",
+    "@webgpu/types": "^0.1.74"
+  }
+}

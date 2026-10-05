@@ -1,0 +1,14 @@
+{
+  "name": "@city/nav",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@city/core-types": "workspace:*",
+    "@city/formats": "workspace:*"
+  }
+}

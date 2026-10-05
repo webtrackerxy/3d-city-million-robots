@@ -1,0 +1,22 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.node.json" },
+    { "path": "./packages/core-types" },
+    { "path": "./packages/metrics" },
+    { "path": "./packages/assets-runtime" },
+    { "path": "./packages/formats" },
+    { "path": "./packages/nav" },
+    { "path": "./packages/buildings" },
+    { "path": "./packages/sim" },
+    { "path": "./packages/render" },
+    { "path": "./packages/sim-worker" },
+    { "path": "./packages/traffic" },
+    { "path": "./tools/sim-bench" },
+    { "path": "./tools/bench-runner" },
+    { "path": "./tools/osm-pipeline" },
+    { "path": "./tools/auto-rig" },
+    { "path": "./apps/city" },
+    { "path": "./apps/city/tsconfig.node.json" }
+  ]
+}

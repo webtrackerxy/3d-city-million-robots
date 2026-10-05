@@ -1,0 +1,13 @@
+{
+  "name": "@city/bench-runner",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "matrix": "node src/main.ts",
+    "report": "node src/report-cli.ts"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.63.0"
+  }
+}

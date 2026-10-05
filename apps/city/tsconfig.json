@@ -1,0 +1,45 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "types": ["@webgpu/types", "vite/client"],
+    "jsx": "react-jsx",
+    "rootDir": "./src",
+    "outDir": "./.tsbuild/app",
+    "noUncheckedIndexedAccess": false
+  },
+  "include": ["src"],
+  "exclude": ["src/bench"],
+  "references": [
+    {
+      "path": "./src/bench"
+    },
+    {
+      "path": "../../packages/core-types"
+    },
+    {
+      "path": "../../packages/formats"
+    },
+    {
+      "path": "../../packages/nav"
+    },
+    {
+      "path": "../../packages/metrics"
+    },
+    {
+      "path": "../../packages/render"
+    },
+    {
+      "path": "../../packages/sim"
+    },
+    {
+      "path": "../../packages/sim-worker"
+    },
+    {
+      "path": "../../packages/buildings"
+    },
+    {
+      "path": "../../packages/assets-runtime"
+    }
+  ]
+}

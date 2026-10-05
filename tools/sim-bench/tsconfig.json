@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "rootDir": "./src",
+    "outDir": "./.tsbuild"
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "../../packages/buildings" },
+    { "path": "../../packages/core-types" },
+    { "path": "../../packages/formats" },
+    { "path": "../../packages/nav" },
+    { "path": "../../packages/sim" }
+  ]
+}

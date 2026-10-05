@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./.tsbuild",
+    "noUncheckedIndexedAccess": false
+  },
+  "include": ["src"],
+  "references": [
+    {
+      "path": "../core-types"
+    },
+    {
+      "path": "../formats"
+    },
+    {
+      "path": "../nav"
+    }
+  ]
+}

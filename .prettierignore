@@ -1,0 +1,10 @@
+.yarn
+.tsbuild
+dist
+node_modules
+data
+yarn.lock
+docs/context.txt
+.vercel
+apps/city/public/draco
+apps/city/public/basis

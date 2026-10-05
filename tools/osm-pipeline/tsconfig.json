@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "rootDir": "./src",
+    "outDir": "./.tsbuild",
+    "noUncheckedIndexedAccess": false
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "../../packages/core-types" },
+    { "path": "../../packages/formats" },
+    { "path": "../../packages/nav" }
+  ]
+}

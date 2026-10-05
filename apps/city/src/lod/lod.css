@@ -1,0 +1,103 @@
+.lod-page {
+  position: absolute;
+  inset: 0;
+}
+.lod-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.lod-label {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  pointer-events: none;
+  background: rgb(10 14 20 / 0.8);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+.lod-label b {
+  color: var(--accent);
+}
+.lod-label span {
+  color: var(--muted);
+}
+.lod-panel {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 16px;
+  background: var(--panel);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.lod-panel h2 {
+  margin: 0;
+  font-size: 15px;
+}
+.lod-panel select {
+  background: #121a22;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+.lod-segmented {
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.lod-segmented button {
+  flex: 1;
+  padding: 5px 0;
+  background: transparent;
+  color: var(--muted);
+  border: 0;
+  cursor: pointer;
+}
+.lod-segmented button[aria-pressed='true'] {
+  background: rgb(77 217 230 / 0.18);
+  color: var(--ink);
+}
+.lod-check {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.lod-status {
+  margin: 0;
+  color: var(--accent);
+}
+.lod-stats {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 10px;
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.lod-stats dt {
+  color: var(--muted);
+}
+.lod-stats dd {
+  margin: 0;
+  text-align: right;
+}
+.lod-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.4;
+}

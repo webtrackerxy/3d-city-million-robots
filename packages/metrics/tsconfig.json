@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2023", "DOM"],
+    "types": ["@webgpu/types"],
+    "rootDir": "./src",
+    "outDir": "./.tsbuild"
+  },
+  "include": ["src"]
+}

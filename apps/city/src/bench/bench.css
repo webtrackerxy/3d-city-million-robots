@@ -1,0 +1,191 @@
+/* Scoped to the Benchmarks page (/bench), which shares the document with the map. */
+.bench-page {
+  position: absolute;
+  inset: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  background: #05070b;
+  color: #d6dde8;
+  overflow: hidden;
+}
+
+.bench-page .viewport {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.bench-page .panel {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 420px;
+  max-height: calc(100% - 24px);
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  background: rgb(8 11 17 / 82%);
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+}
+
+.bench-page .panel h1 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.bench-page .panel h2 {
+  margin: 12px 0 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #7f8da3;
+}
+
+.bench-page .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 1px 0;
+  white-space: nowrap;
+}
+
+.bench-page .row span:last-child {
+  text-align: right;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+.bench-page .row .good {
+  color: #6ee7a0;
+}
+
+.bench-page .row .bad {
+  color: #f59e7a;
+}
+
+.bench-page .fatal {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: 4px;
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.bench-page .fatal h1 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.bench-page .fatal p {
+  margin: 0;
+  color: #a9b4c4;
+}
+
+.bench-page .panel section > p {
+  margin: 4px 0 0;
+  white-space: normal;
+}
+
+.bench-page .panel .hint {
+  color: #7f8da3;
+  line-height: 1.4;
+}
+
+.bench-page .panel .warning {
+  color: #f59e7a;
+}
+
+.bench-page .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.bench-page .buttons button {
+  font: inherit;
+  color: #d6dde8;
+  background: rgb(255 255 255 / 6%);
+  border: 1px solid rgb(255 255 255 / 14%);
+  border-radius: 4px;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+.bench-page .buttons button:hover:not(:disabled) {
+  background: rgb(255 255 255 / 12%);
+}
+
+.bench-page .buttons button:focus-visible {
+  outline: 2px solid #8fb4ff;
+  outline-offset: 1px;
+}
+
+.bench-page .buttons button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.bench-page .buttons button.active,
+.bench-page .buttons button.primary {
+  color: #fff;
+  background: #2b4f96;
+  border-color: #4a73c4;
+}
+
+.bench-page .results {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+.bench-page .results th,
+.bench-page .results td {
+  padding: 2px 4px;
+  text-align: right;
+}
+
+.bench-page .results th {
+  color: #7f8da3;
+  font-weight: 600;
+}
+
+.bench-page .results td {
+  color: #fff;
+  border-top: 1px solid rgb(255 255 255 / 8%);
+}
+
+.bench-page .panel code {
+  white-space: nowrap;
+  color: #d6dde8;
+}
+
+.bench-page .swatch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  border-radius: 2px;
+  vertical-align: baseline;
+}
+
+.bench-page .lod-table td:first-child,
+.bench-page .lod-table th:first-child {
+  text-align: left;
+}
+
+.bench-page .family + .family {
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px solid rgb(255 255 255 / 8%);
+}

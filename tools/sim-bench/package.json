@@ -1,0 +1,18 @@
+{
+  "name": "@city/sim-bench",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bench": "node src/main.ts",
+    "tile-bench": "node src/tile-bench.ts",
+    "m7-bench": "node --max-old-space-size=4096 src/m7-bench.ts"
+  },
+  "dependencies": {
+    "@city/buildings": "workspace:*",
+    "@city/core-types": "workspace:*",
+    "@city/formats": "workspace:*",
+    "@city/nav": "workspace:*",
+    "@city/sim": "workspace:*"
+  }
+}
